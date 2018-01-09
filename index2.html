@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Instagram_PFB-p2</title>
+		<!--Nucleo de Bootstrap css-->
+    <link rel="stylesheet" href="bootstrap/4.0.0 beta 2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+
+
+    
+     
+      .button-log {
+        height: 35px;
+        width: 134px;
+        background-image: url(img/Inst_Cam.png)
+        background-repeat: no-repeat;
+        background-color: transparent;
+        display: inline-block;
+      }
+     .col-Instagram-md-6 { /*Esto solucionó la aliniación del botón izquierdo*/
+      float:right;
+     }
+
+
+    	body {
+		  min-height: 75rem; /* Can be removed; just added for demo purposes */
+		  background-color: #f7f7f7;
+		  }
+
+		.navbar {
+		  margin-bottom: 0;
+		  }
+
+		
+		.album {
+		  min-height: 50rem; 
+		  padding-top: 3rem;
+		  padding-bottom: 3rem;
+		  background-color: #f7f7f7;
+		  margin: auto;
+
+		}
+
+		.card {
+		margin: 20px auto
+		}
+
+		.card > img {
+		  margin-bottom: .75rem;               
+		}
+
+		.card-text {
+		  font-size: 85%;
+		}
+
+		footer {
+		  padding-top: 3rem;
+		  padding-bottom: 3rem;
+		}
+
+		footer p {
+		  margin-bottom: .25rem;
+		}
+    </style>
+    
+</head>
+<body>
+
+ <!-- top_1 -->
+  <div class="container">
+  <!-- Bootstrap Grid -->
+      <div class="row">
+        <!-- Inserción del logo de Instagram -->
+        <div class="col-md-8 bg-light">
+          <a href="#">
+            <img src="img/Inst_Cam.png" alt="Logo Instagram" style="width: 134px; height: 35px; border: 0px;">
+          </a>
+
+        </div> <!-- termina logo de Instagram -->
+        <!-- Inserción del botón "Create a new post" + vínculo -vacío- -->
+        <div class="col-md-2 bg-light">
+          <a href="#"><button type="button" class="btn btn-success">Create a new post</button></a>
+        </div><!-- termina botón "Create a nem post" -->
+        <!-- Inserción de "button + glyphicon-cog + menú tipo "dropdown" -->
+        <div class="col-md-2 bg-light">
+          <div class="dropdown">
+                <button type="button" class="btn" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-cog"></span>
+                  <span class="caret"></span>  
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- el dropdown contiene links en blanco -->
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">About Us</a></li>  
+                </ul>
+                
+        </div> <!-- termina "button + glyphicon-cog + menú tipo "dropdown" -->
+    
+      </div>
+ </div> <!-- Termina container top_1-->
+  <!-- top_2 -->
+  <div class="container">
+    <div class="row"> <!-- Inicia div class="row" -->   
+      <div class="col-md-6"> <!-- inicia div class="col-md-6" -->
+        <div class="col-Instagram-md-6"> <!-- inicia div class="col-Instagram-md-6" -->
+            <a href="index.html" target="_blank">
+          <div id="bodyHolder1"> <!-- inicia id="bodyHolder1" -->
+              <div class="bulbHolder1"> <!-- inicia class="bulbHolder1" -->         
+                <img src="img/BIoff.gif" alt="light" id="myButton1" onclick="lightButton1()" />
+              </div><!-- finaliza class="bulbHolder1" -->
+          </div> <!-- finaliza id="bodyHolder1" -->
+            </a>
+       </div> <!-- finaliza div class="col-Instagram-md-6" -->
+      </div>  <!-- finaliza div class="col-md-6" -->
+
+      <div class="col-md-6">
+
+        <a href="#">
+            <div id="bodyHolder2">
+                <div class="bulbHolder2">
+                  <a href="#">
+                  <img src="img/BDoff.gif" alt="light" id="myButton2" onclick="lightButton2()" />
+                </div>
+            </div>   
+        </a>
+       </div>    
+    </div> <!-- tope_2 - termina div class="row" -->
+  </div> <!-- tope_2 - termina div class="container" -->
+
+
+
+
+	<div class="album">
+		<div class="container"> <!-- Inicia contenedor -->
+				<div class="row">
+					
+					<div class="card">
+						<p class="card-text">Husky</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/husky.jpg" alt="husky">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Cono</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/cone.jpg" alt="cone">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Cesta de Gatos</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/gatos_1.jpg" alt="gatos">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Todo 'orejas'</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/orejas.jpg" alt="orejas">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Paparazzi</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/paparazzi.jpg" alt="paparazzi">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Pizza para todos</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/pizza.jpg" alt="pizza">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Rey León</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/leon.jpg" alt="leon">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Una hermosa Pantera</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/pantera.jpg" alt="pantera">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Amanecer</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/amanecer.jpg" alt="amanecer">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Actuación perruna</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/actuacion.jpg" alt="actuacion">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Cristo moderno</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/cristo.jpg" alt="cristo">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Para un fondo</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/fondo.jpg" alt="fondo">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Margarita</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/margarita.jpg" alt="margarita">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Planeta Marte</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/marte.jpg" alt="marte">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card">
+						<p class="card-text">Paisaje nocturno</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/nocturna.jpg" alt="nocturna">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+                    <div class="card">
+						<p class="card-text">El Sol</p>
+						 <img class="img-fluid img-thumbnail" src="img/Album_1/sol.jpg" alt="sol">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>												
+				</div>
+								
+				</div>				
+		</div> <!-- Finaliza contenedor -->
+	</div>
+	 <script>
+    function lightButton1() {
+                var image = document.getElementById('myButton1');
+                if (image.src.match("img/BIon.gif")) {
+              image.src = "img/BIoff.gif";
+            } else {
+              image.src = "img/BIon.gif";
+            }
+          }
+
+     function lightButton2() {
+              var image = document.getElementById('myButton2');
+              if (image.src.match("img/BDon.gif")) {
+                image.src = "img/BDoff.gif";
+              } else {
+                image.src = "img/BDon.gif";
+              }
+            }      
+
+  </script>
+</body>
+</html>

@@ -24,6 +24,12 @@
      .col-Instagram-md-6 { /*Esto solucionó la aliniación del botón izquierdo*/
       float:right;
      }
+     .camara {
+      float:left;
+     }
+     .loc {
+
+     }
 
     </style>
      
@@ -32,20 +38,56 @@
  <!-- top_1 -->
   <div class="container">
   <!-- Bootstrap Grid -->
-      <div class="row">
+      <div class="row bg-light">
         <!-- Inserción del logo de Instagram -->
-        <div class="col-md-8 bg-light">
+        <div class="col-md-8">
           <a href="#">
             <img src="img/Inst_Cam.png" alt="Logo Instagram" style="width: 134px; height: 35px; border: 0px;">
           </a>
 
         </div> <!-- termina logo de Instagram -->
         <!-- Inserción del botón "Create a new post" + vínculo -vacío- -->
-        <div class="col-md-2 bg-light">
-          <a href="#"><button type="button" class="btn btn-success">Create a new post</button></a>
-        </div><!-- termina botón "Create a nem post" -->
-        <!-- Inserción de "button + glyphicon-cog + menú tipo "dropdown" -->
-        <div class="col-md-2 bg-light">
+        <div class="col-md-2">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Instagram_Modal" data-whatever="">Create a New Post</button>
+        </div>  <!-- termina botón "Create a new post" -->
+        <!-- Modal Button -->
+        <div class="modal fade" id="Instagram_Modal" tabindex="-1" role="dialog" aria-labelledby="Instagram_Modal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="Instagram_Modal"></h5> <!-- si se desea poner un titulo -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                 
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label"></label> <!-- si se desea colocar un label -->
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                  <div class="camara">
+                    <a href="#">
+                      <img src="img/camara_1.gif">
+                    </a>                   
+                  </div>
+                  <div class="loc">
+                    <a href="#">
+                      <img src="img/loc_1.gif">
+                    </a>                   
+                  </div>                  
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+
+    <div class="col-md-2 bg-light"> <!-- Inserción de "button + glyphicon-cog + menú tipo "dropdown" -->
           <div class="dropdown">
                 <button type="button" class="btn" data-toggle="dropdown">
                   <span class="glyphicon glyphicon-cog"></span>
@@ -57,7 +99,7 @@
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">About Us</a></li>  
+                  <li><a href="#">Log Out</a></li>  
                 </ul>
                 
         </div> <!-- termina "button + glyphicon-cog + menú tipo "dropdown" -->
@@ -69,7 +111,7 @@
     <div class="row"> <!-- Inicia div class="row" -->   
       <div class="col-md-6"> <!-- inicia div class="col-md-6" -->
         <div class="col-Instagram-md-6"> <!-- inicia div class="col-Instagram-md-6" -->
-            <a href="index2.html" target="_blank">
+            <a href="index2.html" target="_self">
           <div id="bodyHolder1"> <!-- inicia id="bodyHolder1" -->
               <div class="bulbHolder1"> <!-- inicia class="bulbHolder1" -->         
                 <img src="img/BIoff.gif" alt="light" id="myButton1" onclick="lightButton1()" />
@@ -213,8 +255,17 @@
               } else {
                 image.src = "img/BDon.gif";
               }
-            }      
-
+            }
+            /*Se incluyó el ja*/      
+    $('#Instagram_Modal').on('show.bs.modal', function (event) {
+              var button = $(event.relatedTarget) // Button that triggered the modal
+              var recipient = button.data('whatever') // Extract info from data-* attributes
+              // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+              // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+              var modal = $(this)
+              modal.find('.modal-title').text('' + recipient) /*se puede incluir el mensaje*/
+              modal.find('.modal-body input').val(recipient)
+              })
   </script>
 </body>
 </html>

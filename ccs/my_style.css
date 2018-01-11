@@ -1,0 +1,16 @@
+         .button-log {
+         height: 35px;
+         width: 134px;
+         background-image: url(img/Inst_Cam.png)
+         background-repeat: no-repeat;
+         background-color: transparent;
+         display: inline-block;
+         }
+         .col-Instagram-md-6 { 
+         float:right;
+         }
+         .camara {
+         float:left;
+         }
+         .loc {
+         }

@@ -1,0 +1,29 @@
+commit f7de85732018ae184dcf6af357769b70b521b531
+Author: JuanitoEJ <frweb@yahoo.com>
+Date:   Wed Jan 10 18:00:37 2018 -0400
+
+    texto prueba
+
+commit 458451d1e254c48f9586a1de1de0e00397b67871
+Author: JuanitoEJ <frweb@yahoo.com>
+Date:   Wed Jan 10 13:22:58 2018 -0400
+
+    Creacion de Nodal para Index.html -Paso 2 - adaptacion, insercion de imágenes.
+
+commit 11f2458f698d7c61e0e445def01b632c464a2fc2
+Author: JuanitoEJ <frweb@yahoo.com>
+Date:   Wed Jan 10 12:34:22 2018 -0400
+
+    Creación de Nodal para index.html  - Paso 1 - inserción comandos js - Reemplazo del boton anterior -
+
+commit e553f0444a7dbcb1b343f9c22a5790bc109c2144
+Author: JuanitoEJ <frweb@yahoo.com>
+Date:   Tue Jan 9 18:28:06 2018 -0400
+
+    js faltante -solucionado
+
+commit c40fa66b822cacb3096c9b7353210957536ee479
+Author: JuanitoEJ <frweb@yahoo.com>
+Date:   Tue Jan 9 18:07:50 2018 -0400
+
+    Proyecto Instagram_PFB estable

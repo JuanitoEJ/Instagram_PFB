@@ -1,0 +1,48 @@
+         /*Index.html*/
+         .button-log {
+         height: 35px;
+         width: 134px;
+         background-image: url(img/Inst_Cam.png)
+         background-repeat: no-repeat;
+         background-color: transparent;
+         display: inline-block;
+         }
+         .col-Instagram-md-6 { 
+         float:right;
+         }
+         .camara {
+         float:left;
+         }
+         .loc {
+         }
+         body {
+         min-height: 75rem; /* Can be removed; just added for demo purposes */
+         background-color: #f7f7f7;
+         }
+         .navbar {
+         margin-bottom: 0;
+         }
+         .album {
+         min-height: 50rem; 
+         padding-top: 3rem;
+         padding-bottom: 3rem;
+         background-color: #f7f7f7;
+         margin: auto;
+         }
+         .card {
+         margin: 20px auto
+         }
+         .card > img {
+         margin-bottom: .75rem;               
+         }
+         .card-text {
+         font-size: 85%;
+         }
+         footer {
+         padding-top: 3rem;
+         padding-bottom: 3rem;
+         }
+         footer p {
+         margin-bottom: .25rem;
+         }
+

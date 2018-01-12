@@ -2,6 +2,7 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8">
+      <meta name="description" content="Proyecto asignado por 'Breathco' denominado 'Instagram Photo Feed with Bootstrap'">
       <title>Breathco project # 3 Instagram_PFB</title>
       <!--Nucleo de Bootstrap css-->
       <link rel="stylesheet" href="bootstrap/4.0.0_beta_2/css/bootstrap.min.css">
@@ -11,76 +12,76 @@
    <body>
       <!-- top_1 -->
       <div class="container">
-      <!-- Bootstrap Grid -->
-      <div class="row bg-light">
-         <!-- Insercion del logo de Instagram -->
-         <div class="col-md-8">
-            <a href="#">
-            <img src="img/Inst_Cam.png" alt="Logo Instagram" style="width: 134px; height: 35px; border: 0px;">
-            </a>
-         </div>
-         <!-- termina logo de Instagram -->
-         <!-- Insercion del boton "Create a new post" + vinculo -vacio- -->
-         <div class="col-md-2">
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Instagram_Modal" data-whatever="">Create a New Post</button>
-         </div>
-         <!-- termina boton "Create a new post" -->
-         <!-- Modal Button -->
-         <div class="modal fade" id="Instagram_Modal" tabindex="-1" role="dialog" aria-labelledby="Instagram_Modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                  <div class="modal-header">
-                     
-                     <!-- si se desea poner un titulo -->
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                     </button>
-                  </div>
-                  <div class="modal-body">
-                     <form>
-                        <div class="form-group">
-                           <label for="message-text" class="col-form-label"></label> <!-- si se desea colocar un label -->
-                           <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                        <div class="camara">
-                           <a href="#">
-                           <img src="img/camara_1.gif" alt="camara">
-                           </a>                   
-                        </div>
-                        <div class="loc">
-                           <a href="#">
-                           <img src="img/loc_1.gif" alt="location">
-                           </a>                   
-                        </div>
-                     </form>
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                     <button type="button" class="btn btn-success">Publish</button>
+         <!-- Bootstrap Grid -->
+         <div class="row bg-light">
+            <!-- Insercion del logo de Instagram -->
+            <div class="col-md-8">
+               <a href="#">
+               <img src="img/Inst_Cam.png" alt="Logo Instagram" style="width: 134px; height: 35px; border: 0px;">
+               </a>
+            </div>
+            <!-- termina logo de Instagram -->
+            <!-- Insercion del boton "Create a new post" + vinculo -vacio- -->
+            <div class="col-md-2">
+               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Instagram_Modal" data-whatever="">Create a New Post</button>
+            </div>
+            <!-- termina boton "Create a new post" -->
+            <!-- Modal Button -->
+            <div class="modal fade" id="Instagram_Modal" tabindex="-1" role="dialog" aria-labelledby="Instagram_Modal" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <!-- si se desea poner un titulo -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                        <form>
+                           <div class="form-group">
+                              <label for="message-text" class="col-form-label"></label> <!-- si se desea colocar un label -->
+                              <textarea class="form-control" id="message-text"></textarea>
+                           </div>
+                           <div class="camara">
+                              <a href="#">
+                              <img src="img/camara_1.gif" alt="camara">
+                              </a>                   
+                           </div>
+                           <div class="loc">
+                              <a href="#">
+                              <img src="img/loc_1.gif" alt="location">
+                              </a>                   
+                           </div>
+                        </form>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
-         <div class="col-md-2 bg-light">
-            <!-- Insercion de "button + glyphicon-cog + menu tipo "dropdown" -->
-            <div class="dropdown">
-               <button type="button" class="btn" data-toggle="dropdown">
-               <span class="glyphicon glyphicon-cog"></span>
-               <span class="caret"></span>  
-               </button>
-               <ul class="dropdown-menu">
-                  <!-- el dropdown contiene links en blanco -->
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Log Out</a></li>
-               </ul>
+            <div class="col-md-2 bg-light">
+               <!-- Insercion de "button + glyphicon-cog + menu tipo "dropdown" -->
+               <div class="dropdown">
+                  <button type="button" class="btn" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-cog"></span>
+                  <span class="caret"></span>  
+                  </button>
+                  <ul class="dropdown-menu">
+                     <!-- el dropdown contiene links en blanco -->
+                     <li><a href="#">Action</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">Log Out</a></li>
+                  </ul>
+               </div>
+               <!-- termina "button + glyphicon-cog + menu tipo "dropdown" -->
             </div>
-            <!-- termina "button + glyphicon-cog + menu tipo "dropdown" -->
-          </div>
-       </div>
-      </div><!-- Termina container top_1-->
+         </div>
+      </div>
+      <!-- Termina container top_1-->
       <!-- top_2 -->
       <div class="container">
          <div class="row">
@@ -106,11 +107,11 @@
             <!-- finaliza div class="col-md-6" -->
             <div class="col-md-6">
                <a href="#"></a>
-                  <div id="bodyHolder2">
-                     <div class="bulbHolder2">
-               <img src="img/BDoff.gif" alt="light" id="myButton2" onclick="lightButton2()" />              
+               <div id="bodyHolder2">
+                  <div class="bulbHolder2">
+                     <img src="img/BDoff.gif" alt="light" id="myButton2" onclick="lightButton2()" />              
+                  </div>
                </div>
-               </div>                  
             </div>
          </div>
          <!-- tope_2 - termina div class="row" -->
@@ -202,6 +203,15 @@
          </div>
       </div>
       <!-- /.container -->
+      <footer class="text-muted">
+         <div class="container">
+            <p class="float-right">
+               <a href="#">Back to top</a>
+            </p>
+            <p>Proyecto de Breathco &copy; Ejemplo de pagina de Instagram &copy; desarrollado con Bootstrap &copy;, </p>
+            <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide.</a> Autor JuanitoEJ <a href="https://github.com/JuanitoEJ/Instagram_PFB"></a>.</p>
+         </div>
+      </footer>
       <!-- JavaScript: placed at the end of the document so the pages load faster -->
       <!-- jQuery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
